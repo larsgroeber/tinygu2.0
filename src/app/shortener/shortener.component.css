@@ -1,0 +1,35 @@
+#shortener-input {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 95%;
+  max-width: 500px;
+}
+
+#tinygu-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#shortener-link-field {
+  width: 100%;
+}
+
+#shortener-link-input {
+  height: 45px;
+  width: calc(100% - 40px);
+  font-size: 16px;
+  line-height: 36px;
+  border: none;
+  border-radius: 2px;
+  vertical-align: middle;
+  padding: 0 20px;
+  background-color: white;
+}
+
+
+#shortener-button {
+  position: absolute;
+}

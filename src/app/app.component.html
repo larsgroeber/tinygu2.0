@@ -1,3 +1,39 @@
-<h1>
-  {{title}}
-</h1>
+<div >
+  <div id="main-site" class="mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header mdl-layout__header--transparent">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <!--<span class="mdl-layout-title">Title</span>-->
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation -->
+        <!--<nav class="mdl-navigation">-->
+          <!--<a class="mdl-navigation__link" href="">Link</a>-->
+          <!--<a class="mdl-navigation__link" href="">Link</a>-->
+          <!--<a class="mdl-navigation__link" href="">Link</a>-->
+          <!--<a class="mdl-navigation__link" href="">Link</a>-->
+        <!--</nav>-->
+      </div>
+    </header>
+    <!--<div class="mdl-layout__drawer">-->
+      <!--<span class="mdl-layout-title">Title</span>-->
+      <!--<nav class="mdl-navigation">-->
+        <!--<a class="mdl-navigation__link" href="">Link</a>-->
+        <!--<a class="mdl-navigation__link" href="">Link</a>-->
+        <!--<a class="mdl-navigation__link" href="">Link</a>-->
+        <!--<a class="mdl-navigation__link" href="">Link</a>-->
+      <!--</nav>-->
+    <!--</div>-->
+    <main class="mdl-layout__content">
+      <div class="main-content">
+        <router-outlet></router-outlet>
+      </div>
+      <footer id="footer">
+        <div id="footerContent">
+          <span class="poweredByPO">Build with <span style="color: #FF8E8E;font-size: 140%;">♥</span> by <a href="https://physikonline.uni-frankfurt.de">PhysikOnline</a></span>
+        </div>
+      </footer>
+    </main>
+  </div>
+</div>
+

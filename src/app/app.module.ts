@@ -4,17 +4,23 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { ShortenerComponent } from './shortener/shortener.component';
+import {ShortenerService} from './shortener.service';
+import {RouterModule} from "@angular/router";
+import {appRoutes} from "./routes";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ShortenerComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [ShortenerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

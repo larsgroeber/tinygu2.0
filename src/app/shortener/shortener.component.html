@@ -1,0 +1,9 @@
+<div id="shortener-input">
+  <img src="http://physikonline.uni-frankfurt.de/portal/files/2015-12/d09f32d6-4ff0-11e5-92ce-1cee7e72194a.png" alt="" id="tinygu-logo">
+  <div class="mdl-textfield mdl-js-textfield" id="shortener-link-field">
+    <input type="text" id="shortener-link-input" placeholder="Your link here..." [(ngModel)]="link" (keyup)="onInput()">
+  </div>
+  <button *ngIf="inputUsed" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="shortener-button">
+    Shorten
+  </button>
+</div>
