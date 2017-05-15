@@ -2,6 +2,10 @@
   "name": "tinygu2.0",
   "version": "0.0.0",
   "license": "MIT",
+  "engines": {
+    "node": "7.x",
+    "nmp": "4.x"
+  },
   "scripts": {
     "ng": "ng",
     "prestart": "node_modules/.bin/tsc server/server.ts",
