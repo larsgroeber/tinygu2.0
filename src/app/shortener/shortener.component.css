@@ -13,23 +13,46 @@
   margin-right: auto;
 }
 
-#shortener-link-field {
+.shortener-input-div {
   width: 100%;
 }
 
-#shortener-link-input {
+.shortener-input {
   height: 45px;
   width: calc(100% - 40px);
   font-size: 16px;
   line-height: 36px;
   border: none;
-  border-radius: 2px;
+  border-radius: 4px;
   vertical-align: middle;
   padding: 0 20px;
   background-color: white;
 }
 
 
-#shortener-button {
+#shortener-after-input-box {
   position: absolute;
+  width: 100%;
+}
+
+#shortener-more-options-btn {
+  float: right;
+}
+
+#shortener-more-options-box {
+  margin-top: 20px;
+}
+
+#custom-shortlink-div {
+  max-width: 280px;
+  padding: 0;
+}
+
+#custom-shortlink {
+  height: 35px;
+  padding: 0 15px;
+}
+
+#more-options-add-to-account {
+  float: right;
 }

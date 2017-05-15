@@ -7,13 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShortenerComponent implements OnInit {
   inputUsed = false;
-  shortened = false;
+  showMoreOptions = false;
   link = '';
+  shortLink = '';
+
 
   constructor() { }
 
   onInput() {
     this.inputUsed = !!this.link;
+
+  }
+
+  onMoreOptions() {
+    this.showMoreOptions = !this.showMoreOptions;
   }
 
   shorten() {

@@ -1,29 +1,28 @@
-<div >
+<div>
   <div id="main-site" class="mdl-layout mdl-js-layout">
+    <img src="../assets/goethe_head_blue.svg" id="goethe-head">
     <header class="mdl-layout__header mdl-layout__header--transparent">
       <div class="mdl-layout__header-row">
         <!-- Title -->
-        <!--<span class="mdl-layout-title">Title</span>-->
+        <span class="mdl-layout-title">
+          <span class="mdl-badge" data-badge="2.0">TinyGU</span>
+        </span>
         <!-- Add spacer, to align navigation to the right -->
         <div class="mdl-layout-spacer"></div>
         <!-- Navigation -->
-        <!--<nav class="mdl-navigation">-->
-          <!--<a class="mdl-navigation__link" href="">Link</a>-->
-          <!--<a class="mdl-navigation__link" href="">Link</a>-->
-          <!--<a class="mdl-navigation__link" href="">Link</a>-->
-          <!--<a class="mdl-navigation__link" href="">Link</a>-->
-        <!--</nav>-->
+        <nav class="mdl-navigation">
+          <a *ngIf="loggedIn" class="mdl-navigation__link" href="">Login</a>
+        </nav>
       </div>
     </header>
-    <!--<div class="mdl-layout__drawer">-->
-      <!--<span class="mdl-layout-title">Title</span>-->
-      <!--<nav class="mdl-navigation">-->
-        <!--<a class="mdl-navigation__link" href="">Link</a>-->
-        <!--<a class="mdl-navigation__link" href="">Link</a>-->
-        <!--<a class="mdl-navigation__link" href="">Link</a>-->
-        <!--<a class="mdl-navigation__link" href="">Link</a>-->
-      <!--</nav>-->
-    <!--</div>-->
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">TinyGU 2.0</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">Account</a>
+        <a class="mdl-navigation__link" href="">Help</a>
+        <a class="mdl-navigation__link" href="">About</a>
+      </nav>
+    </div>
     <main class="mdl-layout__content">
       <div class="main-content">
         <router-outlet></router-outlet>

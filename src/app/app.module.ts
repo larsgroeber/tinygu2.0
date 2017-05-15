@@ -8,11 +8,13 @@ import { ShortenerComponent } from './shortener/shortener.component';
 import {ShortenerService} from './shortener.service';
 import {RouterModule} from "@angular/router";
 import {appRoutes} from "./routes";
+import { MDLDirective } from './mdl.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ShortenerComponent
+    ShortenerComponent,
+    MDLDirective
   ],
   imports: [
     BrowserModule,

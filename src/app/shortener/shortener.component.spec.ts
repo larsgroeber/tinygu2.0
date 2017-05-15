@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ShortenerComponent } from './shortener.component';
+import {FormsModule} from "@angular/forms";
 
 describe('ShortenerComponent', () => {
   let component: ShortenerComponent;
@@ -8,7 +9,10 @@ describe('ShortenerComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ShortenerComponent ]
+      declarations: [ ShortenerComponent ],
+      imports: [
+        FormsModule
+      ]
     })
     .compileComponents();
   }));
@@ -19,7 +23,18 @@ describe('ShortenerComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create itself', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should update inputUsed if there is a link', () => {
+    component.onInput();
+    expect(component.inputUsed).toBeFalsy();
+    component.link = "some link";
+    component.onInput();
+    expect(component.inputUsed).toBeTruthy();
+    component.link = '';
+    component.onInput();
+    expect(component.inputUsed).toBeFalsy();
+  })
 });
